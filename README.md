@@ -12,8 +12,6 @@ Just download the code and put the peice of code in your appropiate files.
 
 Simple example for using the library in your project:
 
-import juspay as Juspay
-
 # lets configure the settings and Keys
 ENC_KEY = '8E7A39B47FCAFBF6180DE1DEDA105F50'
 SECURE_SECRET = 'B7A1F58271ED46D17A85204B5D35A20B'
