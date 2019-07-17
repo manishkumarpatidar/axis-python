@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Merchant Check Out Page</title>
+    </head>
+    <body>
+        <center><h1>Please do not refresh this page...</h1></center>
+        <form name="f1" action="{{ axis_url }}" method="post" accept-charset="ISO-8859-1" align="center">
+            <table border="1">
+                <tbody>
+                    {% for key,value in axisdict.items %}
+                       <input type="hidden" name="{{key}}" value="{{value}}">
+                    {% endfor %}
+                </tbody>
+            </table>
+        <script type="text/javascript">
+            document.f1.submit();
+        </script>
+        </form>
+    </body>
+</html>

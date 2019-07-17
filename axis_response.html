@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Merchant Check Out Page</title>
+    </head>
+    <body>
+        <center><h1>Please do not refresh this page...</h1></center>
+        <form method="post" action="{% url 'payment:save_payment' %}" name="f1">
+            <table border="1">
+                <tbody>
+                    {% for key,value in axis.items %}
+                        <tr><td><label>{{key}}</label></td><td>
+                        <input type="text" name="{{key}}" value="{{value}}">
+                        </td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
