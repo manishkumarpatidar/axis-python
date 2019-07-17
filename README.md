@@ -59,7 +59,7 @@ def axis_request(request):
         param_dict = data_dict
     return render(request,"axis_payment.html",{'axisdict':param_dict, 'axis_url':settings.GATEWAY_URL})
     
-   # Response from axis bank
+# Response from axis bank
    @csrf_exempt
 def axis_response(request):
     if request.method == "POST":
@@ -125,7 +125,7 @@ def axis_response(request):
                 return HttpResponse("Hash verification failed. Please try again")
     return HttpResponse(status=200)
     
-    #axis_payment.html
+# axis_payment.html
     <html>
     <head>
         <title>Merchant Check Out Page</title>
@@ -147,7 +147,7 @@ def axis_response(request):
     </body>
 </html>
 
-#axis_response.html
+# axis_response.html
 <html>
     <body>
             <table border="1">
